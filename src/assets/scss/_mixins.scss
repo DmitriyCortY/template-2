@@ -1,0 +1,246 @@
+// styles
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@mixin flex-row-r {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+@mixin flex-colm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@mixin flex-colm-r {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+}
+
+@mixin flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+// breakpoints
+@mixin xl {
+    @media (max-width: #{$xl}) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (max-width: #{$lg}) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: #{$md}) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (max-width: #{$sm}) {
+        @content;
+    }
+}
+
+@mixin xs {
+    @media (max-width: #{$xs}) {
+        @content;
+    }
+}
+
+// grid
+@mixin container {
+    max-width: calc(#{$container-width});
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: #{$offset * 2};
+    padding-right: #{$offset * 2};
+    @include xl {
+        max-width: calc(#{$container-width-xl});
+    }
+    @include lg {
+        max-width: calc(#{$container-width-lg});
+    }
+    @include md {
+        max-width: calc(#{$container-width-md});
+    }
+    @include sm {
+        max-width: calc(#{$container-width-sm});
+    }
+    @include xs {
+        max-width: calc(#{$container-width-xs});
+    }
+}
+
+@mixin container-md {
+    max-width: calc(#{$container-width-lg});
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: #{$offset * 2};
+    padding-right: #{$offset * 2};
+    @include md {
+        max-width: calc(#{$container-width-md});
+    }
+    @include sm {
+        max-width: calc(#{$container-width-sm});
+    }
+    @include xs {
+        max-width: calc(#{$container-width-xs});
+    }
+}
+
+@mixin container-sm {
+    max-width: calc(#{$container-width-md});
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: #{$offset * 2};
+    padding-right: #{$offset * 2};
+    @include sm {
+        max-width: calc(#{$container-width-sm});
+    }
+    @include xs {
+        max-width: calc(#{$container-width-xs});
+    }
+}
+
+@mixin row {
+    width: calc(100% + #{$offset * 2});
+    margin-left: #{$offset * -1};
+    margin-right: #{$offset * -1};
+    @include flex-row;
+}
+
+@mixin col($n) {
+    width: 100%;
+    max-width: calc(#{100% / $colms * $n} - #{$offset * 2});
+    margin: #{$offset};
+}
+
+@mixin col-xl($n) {
+    @include xl {
+        max-width: calc(#{100% / $colms * $n} - #{$offset * 2})
+    }
+}
+
+@mixin col-lg($n) {
+    @include lg {
+        max-width: calc(#{100% / $colms * $n} - #{$offset * 2})
+    }
+}
+
+@mixin col-md($n) {
+    @include md {
+        max-width: calc(#{100% / $colms * $n} - #{$offset * 2})
+    }
+}
+
+@mixin col-sm($n) {
+    @include sm {
+        max-width: calc(#{100% / $colms * $n} - #{$offset * 2})
+    }
+}
+
+@mixin col-xs($n) {
+    @include xs {
+        max-width: calc(#{100% / $colms * $n} - #{$offset * 2})
+    }
+}
+
+@mixin col-p($n) {
+    width: 100%;
+    max-width: #{100% / $colms * $n};
+    padding: #{$offset};
+}
+
+@mixin col-p-xl($n) {
+    @include xl {
+        max-width: #{100% / $colms * $n};
+    }
+}
+
+@mixin col-p-lg($n) {
+    @include lg {
+        max-width: #{100% / $colms * $n};
+    }
+}
+
+@mixin col-p-md($n) {
+    @include md {
+        max-width: #{100% / $colms * $n};
+    }
+}
+
+@mixin col-p-sm($n) {
+    @include sm {
+        max-width: #{100% / $colms * $n};
+    }
+}
+
+@mixin col-p-xs($n) {
+    @include xs {
+        max-width: #{100% / $colms * $n};
+    }
+}
+
+// transition
+@mixin hover {
+    cursor: pointer;
+    transition: $transition;
+    &:hover {
+        @content;
+    }
+}
+
+// typography
+@mixin fzi {
+    font-size: inherit;
+}
+
+@mixin lhi {
+    line-height: inherit;
+}
+
+@mixin ci {
+    color: inherit;
+}
+
+@mixin inh {
+    @include fzi;
+    @include lhi;
+    @include ci;
+}
+
+@mixin html-fz {
+    font-size: $html-fz;
+    @include xl {
+        font-size: $html-fz-xl;
+    }
+    @include lg {
+        font-size: $html-fz-lg;
+    }
+    @include md {
+        font-size: $html-fz-md;
+    }
+    @include sm {
+        font-size: $html-fz-sm;
+    }
+    @include xs {
+        font-size: $html-fz-xs;
+    }
+}
+
+@mixin standard-text {
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+}

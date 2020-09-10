@@ -1,0 +1,613 @@
+// clases
+.b-section {
+    margin: #{$offset-full} 0;
+    @include xl {
+        margin: #{$offset-xl} 0;
+    }
+    @include lg {
+        margin: #{$offset-lg} 0;
+    }
+    @include md {
+        margin: #{$offset-md} 0;
+    }
+    @include sm {
+        margin: #{$offset-sm} 0;
+    }
+    @include xs {
+        margin: #{$offset-xs} 0;
+    }
+}
+
+.b-container,
+[class*="_container"] {
+    @include container;
+}
+
+.b-container-md,
+[class*="_container-md"] {
+    @include container-md;
+}
+
+.b-container-sm,
+[class*="_container-sm"] {
+    @include container-sm;
+}
+
+.b-row,
+[class*="_row"] {
+    @include row;
+}
+
+.b-col {}
+
+.b-col_12,
+[class*="_col-12"] {
+    @include col-p(12);
+}
+
+.b-col_11,
+[class*="_col-11"] {
+    @include col-p(11);
+}
+
+.b-col_10,
+[class*="_col-10"] {
+    @include col-p(10);
+}
+
+.b-col_9,
+[class*="_col-9"] {
+    @include col-p(9);
+}
+
+.b-col_8,
+[class*="_col-8"] {
+    @include col-p(8);
+}
+
+.b-col_7,
+[class*="_col-7"] {
+    @include col-p(7);
+}
+
+.b-col_6,
+[class*="_col-6"] {
+    @include col-p(6);
+}
+
+.b-col_5,
+[class*="_col-5"] {
+    @include col-p(5);
+}
+
+.b-col_4,
+[class*="_col-4"] {
+    @include col-p(4);
+}
+
+.b-col_3,
+[class*="_col-3"] {
+    @include col-p(3);
+}
+
+.b-col_2,
+[class*="_col-2"] {
+    @include col-p(2);
+}
+
+.b-col_1,
+[class*="_col-1"] {
+    @include col-p(1);
+}
+
+.b-col_xl-12,
+[class*="_col-xl-12"] {
+    @include col-p-xl(12);
+}
+
+.b-col_xl-11,
+[class*="_col-xl-11"] {
+    @include col-p-xl(11);
+}
+
+.b-col_xl-10,
+[class*="_col-xl-10"] {
+    @include col-p-xl(10);
+}
+
+.b-col_xl-9,
+[class*="_col-xl-9"] {
+    @include col-p-xl(9);
+}
+
+.b-col_xl-8,
+[class*="_col-xl-8"] {
+    @include col-p-xl(8);
+}
+
+.b-col_xl-7,
+[class*="_col-xl-7"] {
+    @include col-p-xl(7);
+}
+
+.b-col_xl-6,
+[class*="_col-xl-6"] {
+    @include col-p-xl(6);
+}
+
+.b-col_xl-5,
+[class*="_col-xl-5"] {
+    @include col-p-xl(5);
+}
+
+.b-col_xl-4,
+[class*="_col-xl-4"] {
+    @include col-p-xl(4);
+}
+
+.b-col_xl-3,
+[class*="_col-xl-3"] {
+    @include col-p-xl(3);
+}
+
+.b-col_xl-2,
+[class*="_col-xl-2"] {
+    @include col-p-xl(2);
+}
+
+.b-col_xl-1,
+[class*="_col-xl-1"] {
+    @include col-p-xl(1);
+}
+
+.b-col_lg-12,
+[class*="_col-lg-12"] {
+    @include col-p-lg(12);
+}
+
+.b-col_lg-11,
+[class*="_col-lg-11"] {
+    @include col-p-lg(11);
+}
+
+.b-col_lg-10,
+[class*="_col-lg-10"] {
+    @include col-p-lg(10);
+}
+
+.b-col_lg-9,
+[class*="_col-lg-9"] {
+    @include col-p-lg(9);
+}
+
+.b-col_lg-8,
+[class*="_col-lg-8"] {
+    @include col-p-lg(8);
+}
+
+.b-col_lg-7,
+[class*="_col-lg-7"] {
+    @include col-p-lg(7);
+}
+
+.b-col_lg-6,
+[class*="_col-lg-6"] {
+    @include col-p-lg(6);
+}
+
+.b-col_lg-5,
+[class*="_col-lg-5"] {
+    @include col-p-lg(5);
+}
+
+.b-col_lg-4,
+[class*="_col-lg-4"] {
+    @include col-p-lg(4);
+}
+
+.b-col_lg-3,
+[class*="_col-lg-3"] {
+    @include col-p-lg(3);
+}
+
+.b-col_lg-2,
+[class*="_col-lg-2"] {
+    @include col-p-lg(2);
+}
+
+.b-col_lg-1,
+[class*="_col-lg-1"] {
+    @include col-p-lg(1);
+}
+
+.b-col_md-12,
+[class*="_col-md-12"] {
+    @include col-p-md(12);
+}
+
+.b-col_md-11,
+[class*="_col-md-11"] {
+    @include col-p-md(11);
+}
+
+.b-col_md-10,
+[class*="_col-md-10"] {
+    @include col-p-md(10);
+}
+
+.b-col_md-9,
+[class*="_col-md-9"] {
+    @include col-p-md(9);
+}
+
+.b-col_md-8,
+[class*="_col-md-8"] {
+    @include col-p-md(8);
+}
+
+.b-col_md-7,
+[class*="_col-md-7"] {
+    @include col-p-md(7);
+}
+
+.b-col_md-6,
+[class*="_col-md-6"] {
+    @include col-p-md(6);
+}
+
+.b-col_md-5,
+[class*="_col-md-5"] {
+    @include col-p-md(5);
+}
+
+.b-col_md-4,
+[class*="_col-md-4"] {
+    @include col-p-md(4);
+}
+
+.b-col_md-3,
+[class*="_col-md-3"] {
+    @include col-p-md(3);
+}
+
+.b-col_md-2,
+[class*="_col-md-2"] {
+    @include col-p-md(2);
+}
+
+.b-col_md-1,
+[class*="_col-md-1"] {
+    @include col-p-md(1);
+}
+
+.b-col_sm-12,
+[class*="_col-sm-12"] {
+    @include col-p-sm(12);
+}
+
+.b-col_sm-11,
+[class*="_col-sm-11"] {
+    @include col-p-sm(11);
+}
+
+.b-col_sm-10,
+[class*="_col-sm-10"] {
+    @include col-p-sm(10);
+}
+
+.b-col_sm-9,
+[class*="_col-sm-9"] {
+    @include col-p-sm(9);
+}
+
+.b-col_sm-8,
+[class*="_col-sm-8"] {
+    @include col-p-sm(8);
+}
+
+.b-col_sm-7,
+[class*="_col-sm-7"] {
+    @include col-p-sm(7);
+}
+
+.b-col_sm-6,
+[class*="_col-sm-6"] {
+    @include col-p-sm(6);
+}
+
+.b-col_sm-5,
+[class*="_col-sm-5"] {
+    @include col-p-sm(5);
+}
+
+.b-col_sm-4,
+[class*="_col-sm-4"] {
+    @include col-p-sm(4);
+}
+
+.b-col_sm-3,
+[class*="_col-sm-3"] {
+    @include col-p-sm(3);
+}
+
+.b-col_sm-2,
+[class*="_col-sm-2"] {
+    @include col-p-sm(2);
+}
+
+.b-col_sm-1,
+[class*="_col-sm-1"] {
+    @include col-p-sm(1);
+}
+
+.b-col_xs-12,
+[class*="_col-xs-12"] {
+    @include col-p-xs(12);
+}
+
+.b-col_xs-11,
+[class*="_col-xs-11"] {
+    @include col-p-xs(11);
+}
+
+.b-col_xs-10,
+[class*="_col-xs-10"] {
+    @include col-p-xs(10);
+}
+
+.b-col_xs-9,
+[class*="_col-xs-9"] {
+    @include col-p-xs(9);
+}
+
+.b-col_xs-8,
+[class*="_col-xs-8"] {
+    @include col-p-xs(8);
+}
+
+.b-col_xs-7,
+[class*="_col-xs-7"] {
+    @include col-p-xs(7);
+}
+
+.b-col_xs-6,
+[class*="_col-xs-6"] {
+    @include col-p-xs(6);
+}
+
+.b-col_xs-5,
+[class*="_col-xs-5"] {
+    @include col-p-xs(5);
+}
+
+.b-col_xs-4,
+[class*="_col-xs-4"] {
+    @include col-p-xs(4);
+}
+
+.b-col_xs-3,
+[class*="_col-xs-3"] {
+    @include col-p-xs(3);
+}
+
+.b-col_xs-2,
+[class*="_col-xs-2"] {
+    @include col-p-xs(2);
+}
+
+.b-col_xs-1,
+[class*="_col-xs-1"] {
+    @include col-p-xs(1);
+}
+
+// justify-content
+.b-jc-center,
+[class*="_jc-center"] {
+    justify-content: center;
+}
+
+.b-jc-start,
+[class*="_jc-start"] {
+    justify-content: flex-start;
+}
+
+.b-jc-end,
+[class*="_jc-end"] {
+    justify-content: flex-end;
+}
+
+.b-jc-between,
+[class*="_jc-between"] {
+    justify-content: space-between;
+}
+
+.b-jc-around,
+[class*="_jc-around"] {
+    justify-content: space-around;
+}
+
+.b-jc-evenly,
+[class*="_jc-evenly"] {
+    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+// align-items
+.b-ai-center,
+[class*="_ai-center"] {
+    align-items: center;
+}
+
+.b-ai-start,
+[class*="_ai-start"] {
+    align-items: flex-start;
+}
+
+.b-ai-end,
+[class*="_ai-end"] {
+    align-items: flex-end;
+}
+
+.b-flex-row,
+[class*="_flex-row"] {
+    @include flex-row;
+}
+
+.b-flex-colm,
+[class*="_flex-colm"] {
+    @include flex-colm;
+}
+
+// colors
+// background color
+.b-bg-color-primary,
+[class*="_bg-color-primary"] {
+    background-color: $primary;
+}
+
+.b-bg-color-secondary,
+[class*="_bg-color-secondary"] {
+    background-color: $secondary;
+}
+
+.b-bg-color-success,
+[class*="_bg-color-success"] {
+    background-color: $success;
+}
+
+.b-bg-color-danger,
+[class*="_bg-color-danger"] {
+    background-color: $danger;
+}
+
+.b-bg-color-warning,
+[class*="_bg-color-warning"] {
+    background-color: $warning;
+}
+
+.b-bg-color-info,
+[class*="_bg-color-info"] {
+    background-color: $info;
+}
+
+.b-bg-color-light,
+[class*="_bg-color-light"] {
+    background-color: $light;
+}
+
+.b-bg-color-dark,
+[class*="_bg-color-dark"] {
+    background-color: $dark;
+}
+
+.b-bg-color-muted,
+[class*="_bg-color-muted"] {
+    background-color: $muted;
+}
+
+.b-bg-color-gray,
+[class*="_bg-color-gray"] {
+    background-color: $gray;
+}
+
+// text color
+.b-text-color-primary,
+[class*="_text-color-primary"] {
+    color: $primary;
+}
+
+.b-text-color-secondary,
+[class*="_text-color-secondary"] {
+    color: $secondary;
+}
+
+.b-text-color-success,
+[class*="_text-color-success"] {
+    color: $success;
+}
+
+.b-text-color-danger,
+[class*="_text-color-danger"] {
+    color: $danger;
+}
+
+.b-text-color-warning,
+[class*="_text-color-warning"] {
+    color: $warning;
+}
+
+.b-text-color-info,
+[class*="_text-color-info"] {
+    color: $info;
+}
+
+.b-text-color-light,
+[class*="_text-color-light"] {
+    color: $light;
+}
+
+.b-text-color-dark,
+[class*="_text-color-dark"] {
+    color: $dark;
+}
+
+.b-text-color-muted,
+[class*="_text-color-muted"] {
+    color: $muted;
+}
+
+.b-text-color-gray,
+[class*="_text-color-gray"] {
+    color: $gray;
+}
+
+// border color
+.b-border-color-primary,
+[class*="_border-color-primary"] {
+    border-color: $primary;
+}
+
+.b-border-color-secondary,
+[class*="_border-color-secondary"] {
+    border-color: $secondary;
+}
+
+.b-border-color-success,
+[class*="_border-color-success"] {
+    border-color: $success;
+}
+
+.b-border-color-danger,
+[class*="_border-color-danger"] {
+    border-color: $danger;
+}
+
+.b-border-color-warning,
+[class*="_border-color-warning"] {
+    border-color: $warning;
+}
+
+.b-border-color-info,
+[class*="_border-color-info"] {
+    border-color: $info;
+}
+
+.b-border-color-light,
+[class*="_border-color-light"] {
+    border-color: $light;
+}
+
+.b-border-color-dark,
+[class*="_border-color-dark"] {
+    border-color: $dark;
+}
+
+.b-border-color-muted,
+[class*="_border-color-muted"] {
+    border-color: $muted;
+}
+
+.b-border-color-gray,
+[class*="_border-color-gray"] {
+    border-color: $gray;
+}

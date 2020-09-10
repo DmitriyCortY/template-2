@@ -1,0 +1,17 @@
+@import "_var";
+@import "_mixins";
+@import "_temp";
+@import "_zeroing";
+@import "main/**/*.scss";
+@import "simple/**/*.scss";
+@import "advanced/**/*.scss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: $font;
+}
